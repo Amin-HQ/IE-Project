@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راهنما ها</title>
+    <link rel="icon" type="image/png" href="../images/favicon-1.png" />
+
+    <!-- font section  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        @font-face {
+          font-family: "Shabnam"; 
+          src: url("../Fonts/Shabnam.ttf") format("truetype"); 
+          font-weight: normal; 
+          font-style: normal; 
+        }
+  
+        body {
+          font-family: "Shabnam";
+        }
+      </style>
+    
+    <!-- custo css file link  -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/helper.css" />
+
+</head>
+<body>
+    
+    <!-- header section starts  -->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="../index.html" class="logo">دورود <span>من</span></a>
+
+      <nav class="navbar">
+        <a href="../index.html">خانه</a>
+        <a href="book.html">رزرو</a>
+        <a href="packages.html">جاذبه ها</a>
+        <a href="services.html">خدمات</a>
+        <a href="gallery.html">آلبوم</a>
+        <a href="helper.html">راهنما ها</a>
+        <a href="faq.html">سوالات متداول</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="جستجو..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends  -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="">
+        <h3>ورود</h3>
+        <input type="email" class="box" placeholder="ایمیل خود را وارد کنید" />
+        <input type="password" class="box" placeholder="رمز خود را وارد کنید" />
+        <input type="submit" value="ورود" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">یادآوری کن</label>
+        <p>رمز خود را فراموش کرده‌اید؟ <a href="#">اینجا کلیک کنید</a></p>
+        <p>حساب کاربری ندارید؟ <a href="#" id="signup-link">جدید بسازید</a></p>
+      </form>
+    </div>
+
+    <!-- signup form container  -->
+     
+    <div class="signup-form-container">
+      <i class="fas fa-times" id="signup-form-close"></i>
+
+      <form action="" id="signup-form" novalidate>
+        <h3>ثبت نام</h3>
+        <input type="text" class="box" id="fullname" placeholder="نام و نام خانوادگی" pattern="^[\u0600-\u06FF\s]+$" required />
+        <small class="error-message" id="fullname-error"></small>
+        
+        <input type="text" class="box" id="username" placeholder="نام کاربری خود را وارد کنید" required />
+        <small class="error-message" id="username-error"></small>
+        
+        <input type="email" class="box" id="email" placeholder="ایمیل خود را وارد کنید" required />
+        <small class="error-message" id="email-error"></small>
+        
+        <input type="password" class="box" id="password" placeholder="رمز خود را وارد کنید" required />
+        <small class="error-message" id="password-error"></small>
+        
+        <input type="password" class="box" id="confirm-password"placeholder="تکرار رمز عبور" required />
+        <small class="error-message" id="confirm-password-error"></small>
+        
+        <input type="number" class="box" id="phone"placeholder="شماره تماس" required />
+        <small class="error-message" id="phone-error"></small>
+        
+        <input type="submit" value="ثبت نام" class="btn" />
+        <p>قبلاً ثبت نام کرده‌اید؟ <a href="#" id="login-link">وارد شوید</a></p>
+      </form>
+    </div>
+
+
+    <!-- helper details section starts  -->
+
+    <section class="helper-details">
+
+        <img src="/images/pic1.jpg" alt="حسین کریمی">
+
+        <div class="details">
+
+            <h1>حسین کریمی</h1>
+            <h3><strong>راهنمای طبیعت گردی</strong></h3>
+            <p>
+                حسین کریمی، یکی از بهترین راهنمایان طبیعت‌گردی در منطقه دورود، با دانش گسترده‌ای در مورد مناطق بکر طبیعی و تجربه‌ای بالا در برنامه‌ریزی و اجرای سفرهای ماجراجویانه، آماده ارائه خدمات به مسافران است.
+                او در سفرهای مختلف، از جمله کوه‌نوردی، جنگل‌گردی، و گردش در دره‌های شگفت‌انگیز، تجربه‌ای امن، آموزنده و لذت‌بخش را برای شما فراهم می‌کند.
+            </p>
+            <p><strong>ساعات و روزهای خالی برای مشاوره:</strong></p>
+
+            <ul>
+              <li>شنبه: 9 صبح تا 1 بعدازظهر</li>
+              <li>دوشنبه: 3 بعدازظهر تا 7 عصر</li>
+              <li>چهارشنبه: 10 صبح تا 2 بعدازظهر</li>
+            </ul>
+
+            <a href="helper.html" class="btn">بازگشت به صفحه راهنما ها</a>
+
+        </div>
+
+    </section>
+
+    <!-- helper-details section ends  -->
+
+    <!-- footer section  -->
+    
+    <section class="footer">
+  
+      <h1 class="credit"> کلیه حقوق این وبسایت به <span> دورود من </span> تعلق دارد. </h1>
+
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

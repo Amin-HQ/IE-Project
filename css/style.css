@@ -1,5 +1,5 @@
 :root {
-    --green: #03c013;
+    --green: #00cc03;
 
 }
 
@@ -604,7 +604,7 @@ header .search-bar-container label:hover{
 }
 
 .faq-item.active .faq-question{
-    background-color: rgba(21, 255, 0, 0.2);
+    background-color: rgba(21, 255, 0, 0.1);
 }
 
 .faq-item.active .faq-question i{
@@ -803,6 +803,23 @@ header .search-bar-container label:hover{
         padding: 1.5rem;
         margin: 1.5rem;
         background: #222;
+    }
+    helper-details{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    helper-details img{
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    helper-details .details{
+        max-width: 100%;
     }
 }
 
