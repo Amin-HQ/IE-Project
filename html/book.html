@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رزرو</title>
+    <link rel="icon" type="image/png" href="../images/favicon-1.png" />
+
+    <!-- font section  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      @font-face {
+        font-family: "Shabnam";
+        src: url("../Fonts/Shabnam.ttf") format("truetype"); 
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "Shabnam";
+      }
+    </style>
+
+    <!-- custo css file link  -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+
+    <!-- header section starts  -->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="../index.html" class="logo">دورود <span>من</span></a>
+
+      <nav class="navbar">
+        <a href="../index.html">خانه</a>
+        <a href="#book">رزرو</a>
+        <a href="packages.html">جاذبه ها</a>
+        <a href="services.html">خدمات</a>
+        <a href="gallery.html">آلبوم</a>
+        <a href="helper.html">راهنما ها</a>
+        <a href="faq.html">سوالات متداول</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="جستجو..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends  -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="">
+        <h3>ورود</h3>
+        <input type="email" class="box" placeholder="ایمیل خود را وارد کنید" />
+        <input type="password" class="box" placeholder="رمز خود را وارد کنید" />
+        <input type="submit" value="ورود" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">یادآوری کن</label>
+        <p>رمز خود را فراموش کرده‌اید؟ <a href="#">اینجا کلیک کنید</a></p>
+        <p>حساب کاربری ندارید؟ <a href="#" id="signup-link">جدید بسازید</a></p>
+      </form>
+    </div>
+
+    <!-- signup form container  -->
+     
+    <div class="signup-form-container">
+      <i class="fas fa-times" id="signup-form-close"></i>
+
+      <form action="">
+        <h3>ثبت نام</h3>
+        <input type="text" class="box" placeholder="نام و نام خانوادگی" required />
+        <input type="text" class="box" placeholder="نام کاربری خود را وارد کنید" required />
+        <input type="email" class="box" placeholder="ایمیل خود را وارد کنید" required />
+        <input type="password" class="box" placeholder="رمز خود را وارد کنید" required />
+        <input type="password" class="box" placeholder="تکرار رمز عبور" required />
+        <input type="number" class="box" placeholder="شماره تماس" required />
+        <input type="submit" value="ثبت نام" class="btn" />
+        <p>قبلاً ثبت نام کرده‌اید؟ <a href="#" id="login-link">وارد شوید</a></p>
+      </form>
+    </div>
+
+    <!-- book section starts  -->
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span> رزرو </span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="../images/book-img.png" alt="book-img" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>مکان مورد نظر</h3>
+            <input type="text" placeholder="اسم را وارد کنید..." />
+          </div>
+          <div class="inputBox">
+            <h3>تعداد نفرات</h3>
+            <input type="number" placeholder="تعداد را وارد کنید..." />
+          </div>
+          <div class="inputBox">
+            <h3>زمان ورود</h3>
+            <input type="date" placeholder="تاریخ ورود را وارد کنید..." />
+          </div>
+          <div class="inputBox">
+            <h3>زمان خروج</h3>
+            <input type="date" placeholder="تاریخ خروج را وارد کنید..." />
+          </div>
+          <input type="submit" class="btn" value="رزرو کنید" />
+        </form>
+      </div>
+    </section>
+
+    <!-- book section ends  -->
+
+    <!-- footer section  -->
+
+    <section class="footer">
+      
+      <h1 class="credit"> کلیه حقوق این وبسایت به <span> دورود من </span> تعلق دارد. </h1>
+
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

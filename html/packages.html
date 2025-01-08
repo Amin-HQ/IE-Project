@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جاذبه ها</title>
+    <link rel="icon" type="image/png" href="../images/favicon-1.png" />
+
+    <!-- font section  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      @font-face {
+        font-family: "Shabnam"; 
+        src: url("../Fonts/Shabnam.ttf") format("truetype"); 
+        font-weight: normal; 
+        font-style: normal;
+      }
+
+      body {
+        font-family: "Shabnam";
+      }
+    </style>
+    
+    <!-- custo css file link  -->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- header section starts  -->
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+  
+        <a href="../index.html" class="logo">دورود <span>من</span></a>
+  
+        <nav class="navbar">
+          <a href="../index.html">خانه</a>
+          <a href="book.html">رزرو</a>
+          <a href="#packages">جاذبه ها</a>
+          <a href="services.html">خدمات</a>
+          <a href="gallery.html">آلبوم</a>
+          <a href="helper.html">راهنما ها</a>
+          <a href="faq.html">سوالات متداول</a>
+        </nav>
+  
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+        </div>
+  
+        <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="جستجو..." />
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+      </header>
+  
+      <!-- header section ends  -->
+  
+      <!-- login form container  -->
+  
+      <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+  
+        <form action="">
+          <h3>ورود</h3>
+          <input type="email" class="box" placeholder="ایمیل خود را وارد کنید" />
+          <input type="password" class="box" placeholder="رمز خود را وارد کنید" />
+          <input type="submit" value="ورود" class="btn" />
+          <input type="checkbox" id="remember" />
+          <label for="remember">یادآوری کن</label>
+          <p>رمز خود را فراموش کرده‌اید؟ <a href="#">اینجا کلیک کنید</a></p>
+          <p>حساب کاربری ندارید؟ <a href="#" id="signup-link">جدید بسازید</a></p>
+        </form>
+      </div>
+
+      <!-- signup form container  -->
+       
+      <div class="signup-form-container">
+        <i class="fas fa-times" id="signup-form-close"></i>
+  
+        <form action="" id="signup-form" novalidate>
+          <h3>ثبت نام</h3>
+          <input type="text" class="box" id="fullname" placeholder="نام و نام خانوادگی" pattern="^[\u0600-\u06FF\s]+$" required />
+          <small class="error-message" id="fullname-error"></small>
+          
+          <input type="text" class="box" id="username" placeholder="نام کاربری خود را وارد کنید" required />
+          <small class="error-message" id="username-error"></small>
+          
+          <input type="email" class="box" id="email" placeholder="ایمیل خود را وارد کنید" required />
+          <small class="error-message" id="email-error"></small>
+          
+          <input type="password" class="box" id="password" placeholder="رمز خود را وارد کنید" required />
+          <small class="error-message" id="password-error"></small>
+          
+          <input type="password" class="box" id="confirm-password"placeholder="تکرار رمز عبور" required />
+          <small class="error-message" id="confirm-password-error"></small>
+          
+          <input type="number" class="box" id="phone"placeholder="شماره تماس" required />
+          <small class="error-message" id="phone-error"></small>
+          
+          <input type="submit" value="ثبت نام" class="btn" />
+          <p>قبلاً ثبت نام کرده‌اید؟ <a href="#" id="login-link">وارد شوید</a></p>
+        </form>
+      </div>
+
+      <!-- package section starts  -->
+
+      <section class="packages" id="packages">
+
+        <h1 class="heading">
+          <span>جاذبه ها</span>
+        </h1>
+
+        <div class="box-container">
+
+          <div class="box">
+            <img src="../images/gahar-lake.jpg" alt="Gahar-Lake">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> دریاچه گهر </h3>
+              <p>این دریاچه که به «نگین اشترانکوه» معروف است، با زیبایی چشم نوازش دل هر شخصی را به سمت خودش جذب می‌کند. </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="price"> 800,000 تومان <span>1,000,000 تومان</span></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../images/img-4.jpg" alt="Bisheh-Waterfall">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> آبشار بیشه </h3>
+              <p>این آبشار از میان کوه و درختان به‌سمت پایین سرریز می‌شود و  به رودخانه‌ دائمی و پرآب لرستان، یعنی سزار می‌ریزد.</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="price"> 800,000 تومان <span>1,000,000 تومان</span></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../images/neygah-valley.jpg" alt="Neygah-Valley">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i>دره نی‌گاه</h3>
+              <p>در مسیر دریاچه گهر، رودی به نام سفید آب وجود دارد که در مسیر این رود، این دره زیبا و صخره‌ای خودنمایی می‌کند.</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price"> 800,000 تومان <span>1,000,000 تومان</span></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../images/tange-lili.jpg" alt="Lili-Canyon">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> تنگه لی‌لی</h3>
+              <p>این تنگه یکی از زیباترین جلوه‌های طبیعی دورود است که با حوضچه‌ها و استخرهای طبیعی‌اش برای آب‌تنی بی‌نظیر است.</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="price"> 800,000 تومان <span>1,000,000 تومان</span></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../images/talab-azgen.jpg" alt="Azgen-Wetland">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> تالاب ازگن </h3>
+              <p>این تالاب از طریق جمع شدن آب باران یا ذوب شدن برف‌ها در دامنه کوه قارون شکل گرفته و چشم‌انداز زیبایی را به‌وجود آورده‌است.</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price"> 800,000 تومان <span>1,000,000 تومان</span></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../images/laleh-vazhgon.jpg" alt="Laleh-Vazhgon">
+            <div class="content">
+              <h3><i class="fas fa-map-marker-alt"></i> دشت لاله های واژگون</h3>
+              <p>دشت لاله‌های واژگون از زیباترین و پرپشت‌ترین دشت‌های لاله به شمار می‌رود و رنگ‌های مختلف این گل، زیبایی خاصی را به دامنه کوه داده است.</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price"> 800,000 تومان <span> 1,000,000 تومان </span></div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- package section ends  -->
+      
+    <!-- footer section  -->
+    
+    <section class="footer">
+
+      <h1 class="credit"> کلیه حقوق این وبسایت به <span> دورود من </span> تعلق دارد. </h1>
+
+    </section>
+
+      <!-- custom js file link  -->
+      <script src="../js/script.js"></script>
+</body>
+</html>

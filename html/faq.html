@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوالات متداول</title>
+    <link rel="icon" type="image/png" href="../images/favicon-1.png" />
+
+    <!-- font section  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      @font-face {
+        font-family: "Shabnam"; 
+        src: url("../Fonts/Shabnam.ttf") format("truetype"); 
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "Shabnam";
+      }
+    </style>
+    
+    <!-- custo css file link  -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+<body>
+    
+    <!-- header section starts  -->
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+  
+        <a href="../index.html" class="logo">دورود <span>من</span></a>
+  
+        <nav class="navbar">
+          <a href="../index.html">خانه</a>
+          <a href="book.html">رزرو</a>
+          <a href="packages.html">جاذبه ها</a>
+          <a href="services.html">خدمات</a>
+          <a href="gallery.html">آلبوم</a>
+          <a href="helper.html">راهنما ها</a>
+          <a href="#faq">سوالات متداول</a>
+        </nav>
+  
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+        </div>
+  
+        <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="جستجو..." />
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+      </header>
+  
+      <!-- header section ends  -->
+  
+      <!-- login form container  -->
+  
+      <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+  
+        <form action="">
+          <h3>ورود</h3>
+          <input type="email" class="box" placeholder="ایمیل خود را وارد کنید" />
+          <input type="password" class="box" placeholder="رمز خود را وارد کنید" />
+          <input type="submit" value="ورود" class="btn" />
+          <input type="checkbox" id="remember" />
+          <label for="remember">یادآوری کن</label>
+          <p>رمز خود را فراموش کرده‌اید؟ <a href="#">اینجا کلیک کنید</a></p>
+          <p>حساب کاربری ندارید؟ <a href="#" id="signup-link">جدید بسازید</a></p>
+        </form>
+      </div>
+
+      <!-- signup form container  -->
+       
+      <div class="signup-form-container">
+        <i class="fas fa-times" id="signup-form-close"></i>
+  
+        <form action="" id="signup-form" novalidate>
+          <h3>ثبت نام</h3>
+          <input type="text" class="box" id="fullname" placeholder="نام و نام خانوادگی" pattern="^[\u0600-\u06FF\s]+$" required />
+          <small class="error-message" id="fullname-error"></small>
+          
+          <input type="text" class="box" id="username" placeholder="نام کاربری خود را وارد کنید" required />
+          <small class="error-message" id="username-error"></small>
+          
+          <input type="email" class="box" id="email" placeholder="ایمیل خود را وارد کنید" required />
+          <small class="error-message" id="email-error"></small>
+          
+          <input type="password" class="box" id="password" placeholder="رمز خود را وارد کنید" required />
+          <small class="error-message" id="password-error"></small>
+          
+          <input type="password" class="box" id="confirm-password"placeholder="تکرار رمز عبور" required />
+          <small class="error-message" id="confirm-password-error"></small>
+          
+          <input type="number" class="box" id="phone"placeholder="شماره تماس" required />
+          <small class="error-message" id="phone-error"></small>
+          
+          <input type="submit" value="ثبت نام" class="btn" />
+          <p>قبلاً ثبت نام کرده‌اید؟ <a href="#" id="login-link">وارد شوید</a></p>
+        </form>
+      </div>
+
+      <!-- faq section starts  -->
+
+      <section class="faq" id="faq">
+
+        <h1 class="heading">
+            <span>سوالات متداول</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="../images/contact-img.png" alt="travel-to-nature">
+            </div>
+
+            <form action="">
+
+                <div class="faq-container">
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>دورود کجاست؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>یکی از شهرهای استان لرستان است. دورود در دامنه رشته کوه زاگرس قرار گرفته است. <br> دو سر شاخه رود دز یکی از شمال و دیگری از شرق به نام‌های «تیره» و «ماربره»، در دورود به هم می‌پیوندند و با نام رود سزار سرچشمه اصلی رود دز می‌شوند.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>مردم دورود به چه زبانی صحبت می‌کنند؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>مردم دورود از قوم لر هستند. از شعب لرهای کوچک «لرستانی» و لرهای بزرگ «بختیاری» هستند. آنها به زبان لری صحبت می‌کنند. از نظر زبان و گویش در شهر دورود می‌توان به گویش های لری بختیاری، لری مینجایی خرم‌آباد و لری بالاگریوه‌ای و در اطراف دورود و روستاها لری سیلاخوری اشاره کرد.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>چه جاذبه‌هایی در دورود وجود دارد؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>برای معرفی طبیعت زیبای شهرستان دورود می‌توان به مناطق زیر اشاره کرد: <br> آبشار بیشه، دریاچه گهر، کوه رنگیه، غار مرده‌ها، غار منو، غار وقت ساعت، آبشار ازنادر، آبشار عزیزآباد، دره نی‌گاه، تنگه لی‌لی، تالاب ازگن، بیشه لنج‌آباد، بیشه آبگرم و... اشاره کرد.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="faq-question">
+                          <h3>بهترین زمان برای سفر به دورود چه زمانی است؟</h3>
+                          <i class="fas fa-chevron-down"></i>
+                      </div>
+                      <div class="faq-answer">
+                        <p>می‌توان گفت شما در هر فصل از سال برای سفر به دورود بیایید ضرر نکرده‌اید، چرا که این شهر در هر زمان از سال جذابیت و زیبایی‌های خاص خود را دارد که مسافران از آن لذت ببرند.</p>
+                      </div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="faq-question">
+                          <h3>آب و هوای دورود چگونه است؟</h3>
+                          <i class="fas fa-chevron-down"></i>
+                      </div>
+                      <div class="faq-answer">
+                        <p>دورود به دلیل کوهستانی بودن منطقه، دارای آب و هوای معتدل کوهستانی است. به دلیل نزدیکی دورود به اشترانکوه و ریزش باران و برف فراوان، این شهر دارای شبکه آب‌های روان غنی است و یکی از مناطق پرآب استان لرستان محسوب می‌شود.</p>
+                      </div>
+                    </div>
+
+                </div>
+
+            </form>
+            
+        </div>
+
+      </section>
+
+      <!-- faq section ends  -->
+
+    <!-- footer section  -->
+    
+    <section class="footer">
+
+      <h1 class="credit"> کلیه حقوق این وبسایت به <span> دورود من </span> تعلق دارد. </h1>
+
+    </section>
+
+      <!-- custom js file link  -->
+      <script src="../js/script.js"></script>
+</body>
+</html>
