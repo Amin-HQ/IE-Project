@@ -1,22 +1,28 @@
-.helper-details{
-    margin-top: 100px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    flex-wrap: wrap; 
+.helper-details .heading{
+    padding: 7rem;
 }
 
-.helper-details img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 3.5rem;
+.helper-details .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+}
+
+.helper-details .image{
+    flex: 1 1 35rem;
+}
+
+.helper-details .image img{
+    width: 100%;
+    border-radius: 2%;
 }
 
 .helper-details .details{
-    max-width: 600px;
-    text-align: right;
+    flex: 1 1 35rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
 }
   
 .helper-details .details h1{
