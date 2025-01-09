@@ -80,7 +80,6 @@ loginLink.addEventListener('click', (e) =>{
     loginForm.classList.add('active');
 });
 
-// Form validation
 const signupForm = document.getElementById('signup-form');
 
 const validateFullName = (fullname) => {
@@ -119,7 +118,6 @@ signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let isValid = true;
 
-    // Validate fullname
     const fullname = document.getElementById('fullname');
     if (!validateFullName(fullname.value)) {
         showError(fullname, 'لطفا فقط از حروف فارسی استفاده کنید');
@@ -128,7 +126,6 @@ signupForm.addEventListener('submit', (e) => {
         hideError(fullname);
     }
 
-    // Validate email
     const email = document.getElementById('email');
     if (!validateEmail(email.value)) {
         showError(email, 'لطفا یک ایمیل معتبر وارد کنید');
@@ -137,7 +134,6 @@ signupForm.addEventListener('submit', (e) => {
         hideError(email);
     }
 
-    // Validate password
     const password = document.getElementById('password');
     if (!validatePassword(password.value)) {
         showError(password, 'رمز عبور باید حداقل ۶ کاراکتر باشد');
@@ -146,7 +142,6 @@ signupForm.addEventListener('submit', (e) => {
         hideError(password);
     }
 
-    // Validate confirm password
     const confirmPassword = document.getElementById('confirm-password');
     if (password.value !== confirmPassword.value) {
         showError(confirmPassword, 'رمز عبور مطابقت ندارد');
@@ -155,7 +150,6 @@ signupForm.addEventListener('submit', (e) => {
         hideError(confirmPassword);
     }
 
-    // Validate phone
     const phone = document.getElementById('phone');
     if (!validatePhone(phone.value)) {
         showError(phone, 'شماره تماس باید ۱۱ رقم و با ۰۹ شروع شود');
@@ -171,7 +165,6 @@ signupForm.addEventListener('submit', (e) => {
     }
 });
 
-// Real-time validation
 const inputs = signupForm.querySelectorAll('input[required]');
 inputs.forEach(input => {
     input.addEventListener('input', () => {
@@ -205,7 +198,6 @@ inputs.forEach(input => {
     });
 });
 
-// FAQ functionality
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
         const faqItem = question.parentElement;
