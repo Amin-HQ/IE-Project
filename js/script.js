@@ -35,7 +35,7 @@ setInterval(() => {
     }
 
     console.log(i);
-}, 3000);
+}, 5000);
 
 window.onscroll = () =>{ 
     searchBtn.classList.remove('fa-times');
